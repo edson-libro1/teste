@@ -25,13 +25,13 @@ Acessar a Página de Login
     Go To    ${LOGIN_URL}
 
 Preencher o Campo de Usuário
-    Input Text    id:usuario    ${USUARIO}
+    Input Text    name:login    ${USUARIO}
 
 Preencher o Campo de Senha
-    Input Password    id:senha    ${SENHA}
+    Input Password   name:password    ${SENHA}
 
 Clicar no Botão de Entrar
-    Click Button    id:botao-entrar
+    Click Button   name:Entrar
 
 Verificar Login Bem-Sucedido
     Wait Until Page Contains Element    id:elemento-de-sucesso    timeout=10s
